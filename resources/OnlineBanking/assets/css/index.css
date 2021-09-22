@@ -1,0 +1,93 @@
+
+#button {
+	background: green;
+	float: right;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 50px;
+}
+
+
+@media only screen and (max-width: 550px) {
+	#button {
+		background: green;
+		float: right;
+		color: white;
+		text-decoration: none;
+		padding: 10px;
+		border-radius: 50px;
+		display: none;
+	}
+}
+
+
+p {
+	background: red;
+	color: white;
+	border: 4px solid black;
+	padding: 30px;
+	top: 0;
+	margin-top: 0;
+}
+
+#logoText {
+	background: green;
+	float: left;
+	color: white;
+	text-decoration: none;
+	padding: 26px;
+	font-size: 60px;
+	background: rgba(173, 255, 047, .0);
+}
+
+@media only screen and (max-width: 550px) {
+	#logoText {
+		background: yellow;
+		float: left;
+		color: white;
+		text-decoration: none;
+	}
+}
+
+
+* {
+	margin: 0;
+}
+
+body {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    height: 100%;
+}
+
+body:before {
+	content: "";
+    position: fixed;
+    background-image: url("../img/back.PNG");
+	background-attachment: absolute;
+    background-size: cover;
+    z-index: -1; /* Keep the background behind the content */
+    height: 20%; width: 20%; /* Using Glen Maddern's trick /via @mente */
+
+    /* don't forget to use the prefixes you need */
+    transform: scale(5);
+    transform-origin: top left;
+    filter: blur(1px);
+}
+
+
+#nav {
+	background: lightgreen;
+	min-height: 120px;
+	position: sticky;
+	top: 0;
+	background: rgba(173, 255, 047, .6);
+	border-bottom: 4px solid black;
+}
+
+@media only screen and (max-width: 550px) {
+	#nav {
+		background: yellow;
+	}
+}
